@@ -10,7 +10,8 @@ const HomePage = () => {
           'https://api.pexels.com/v1/photos/2014422',
           {
             headers: {
-              Authorization: 'YOUR_API_KEY', // Replace with your Pexels API key
+              Authorization:
+                'jtmqbIQwHaJsZRkbUNJZlZPVDrxWZojEYodXKeNMOIBmBZphbdfhkMx0', // Replace with your Pexels API key
             },
           },
         );
