@@ -1,0 +1,141 @@
+.card {
+  padding: 1rem;
+  height: fit-content;
+  width: 70%;
+  background-color: white;
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1.2fr 1fr 1fr 1fr 1fr;
+  border-radius: 2rem;
+  column-gap: 2rem;
+
+  .imgContainer {
+    grid-column: 1 / 2;
+    margin: auto;
+    grid-row: 1/ -1;
+  }
+
+  .category,
+  .rating,
+  .price,
+  .title {
+    grid-column: 2 / 3;
+  }
+
+  .category {
+    grid-row: 1 / 2;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    height: fit-content;
+    grid-row: 2 / 3;
+    margin: 0;
+  }
+
+  .cartBtnContainer {
+    text-align: center;
+    margin: 0.75rem;
+
+    button {
+      font-size: 1.5rem;
+      border-radius: 0.5rem;
+      width: 80%;
+      background-color: rgb(180, 111, 26);
+    }
+  }
+
+  .rating {
+    grid-row: 3 / 4;
+  }
+  .rating::before {
+    content: 'Rating: ';
+  }
+
+  .price {
+    grid-row: 4 / 5;
+  }
+
+  .quantityContainer {
+    grid-row: 5/6;
+  }
+
+  .price::before {
+    content: 'Rs: ';
+  }
+
+  img {
+    height: 200px;
+  }
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (max-width: 760px) {
+  /* Card container styles */
+  .checkoutLink {
+    width: 70%;
+  }
+
+  header {
+    margin: 0;
+    padding: 0;
+
+    ul {
+      padding-left: 0;
+      width: 60%;
+    }
+  }
+  .main {
+    display: flex; /* Allows alignment and distribution of cards */
+    justify-content: center; /* Center the card horizontally */
+    align-items: center; /* Center the card vertically, if needed */
+    padding: 20px; /* Add some padding around the card */
+    background-color: #f0f0f0; /* A light background to distinguish from the card */
+  }
+
+  /* Card styles */
+  .card {
+    width: 250px; /* Fixed width */
+    height: fit-content; /* Fixed height */
+    background-color: white; /* Background color for the card */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 20px; /* Padding inside the card */
+    display: flex; /* Flex layout for card content */
+    flex-direction: column; /* Arrange content vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: space-around; /* Distribute content evenly */
+  }
+
+  /* Image container styles */
+  .imgContainer {
+    width: 100%; /* Take full width */
+    height: 50%; /* Half the card's height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imgContainer img {
+    width: 100%; /* Ensure the image does not exceed the container's width */
+    max-height: 100%; /* Ensure the image does not exceed the container's height */
+    border-radius: 4px; /* Slight rounding on the image's corners */
+  }
+
+  /* Text styles */
+  .category,
+  .title,
+  .rating,
+  .price {
+    margin: 5px 0; /* Consistent spacing between text elements */
+    text-align: center; /* Center the text */
+    font-family: Arial, sans-serif; /* A common font */
+  }
+}
