@@ -1,0 +1,81 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`App Components Tests > should add items to the cart 1`] = `
+<div>
+  <header>
+    <h1>
+      Shopping Cart
+    </h1>
+    <ul>
+      <li>
+        <a
+          aria-current="page"
+          class="active"
+          href="/"
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          class=""
+          href="/shop"
+        >
+          Shop
+        </a>
+      </li>
+      <li>
+        <a
+          class=""
+          href="/cart"
+        >
+          Cart (
+          0
+          )
+        </a>
+      </li>
+    </ul>
+  </header>
+  <main />
+</div>
+`;
+
+exports[`App Components Tests > should components 1`] = `
+<div>
+  <header>
+    <h1>
+      Shopping Cart
+    </h1>
+    <ul>
+      <li>
+        <a
+          aria-current="page"
+          class="active"
+          href="/"
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          class=""
+          href="/shop"
+        >
+          Shop
+        </a>
+      </li>
+      <li>
+        <a
+          class=""
+          href="/cart"
+        >
+          Cart (
+          0
+          )
+        </a>
+      </li>
+    </ul>
+  </header>
+  <main />
+</div>
+`;
